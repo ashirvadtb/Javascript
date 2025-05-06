@@ -7,17 +7,16 @@
 </head>
 <body>
     <script>
-
-function checkAge(age) {
-  return (age > 18) ? true : confirm('Did parents allow you?');
+  function ask(question, yes, no) {
+  if (confirm(question)) yes();
+  else no();
 }
 
-    </script>
-
-    <script>
-        function checkAge(age) {
-  return (age > 18) || confirm('Did parents allow you?');
-}
+ask(
+  "Do you agree?",
+  () => alert("You agreed."),
+  () => alert("You canceled the execution.")
+);
     </script>
 </body>
 </html>
