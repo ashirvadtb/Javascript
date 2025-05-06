@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+    alert( 1 && null && 2 );// shows output null
+    alert( alert(1) || 2 || alert(3) );// shows output 1 and 2  
+    
+    if(age>=14 && age <=90){}// for check the range bretween
+
+    if(!(age>=14 && age <=90)){} // chek the range outside
+
+    if (-1 || 0) alert( 'first' );
+if (-1 && 0) alert( 'second' );
+if (null || -1 && 1) alert( 'third' );//first and third will execute
+    </script> -->
+    <script>
+        let user=prompt("enter the user name");
+        if(user=="Admin"){
+            let password=prompt("enter your password");
+          
+            if(password=='TheMaster'){
+                alert("Welcome!");
+            }
+            else if(password==='' || password === null ){
+                alert("cancelled")
+            }
+            else{
+                alert("wrong password")
+            }
+        }
+        else if(user==='' || user===null){
+                alert('I dont know you')
+            }
+        else{
+            alert("cancelled")
+        }
+    </script>
+</body>
+</html>
