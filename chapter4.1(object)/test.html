@@ -7,11 +7,27 @@
 </head>
 <body>
     <script>
-        let fruit=prompt("enter a fruit name ");
-        let bag={
-            [fruit]:5,
+        // let fruit=prompt("enter a fruit name ");
+        // let bag={
+        //     [fruit]:5,
+        // };
+
+        // alert(bag.apple);  
+        // let user={age:30}     
+        // let key="age";
+        // alert(key in user);
+
+        let user={
+            age:20,
+            name:"John",
+            isAdmin:true,
+            
         };
-        alert(bag.apple);       
+        for(let key in user){
+            alert(key);
+            alert(user[key])
+        }
+
     </script>
 </body>
 </html>
