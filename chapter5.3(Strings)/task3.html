@@ -7,13 +7,10 @@
 </head>
 <body>
     <script>
-        function isEmpty(obj) {
-            for (let key in obj) {
-    
-                    return false;
-                }
-            return true;
-            }
+        function truncate(str, maxlength) {
+  return (str.length > maxlength) ?
+    str.slice(0, maxlength - 1) + '…' : str;
+}
     </script>
 </body>
 </html>

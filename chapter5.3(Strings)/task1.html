@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-        function isEmpty(obj) {
-            for (let key in obj) {
-    
-                    return false;
-                }
-            return true;
-            }
+        function ucFirst(str) {
+  if (!str) return str;
+
+  return str[0].toUpperCase() + str.slice(1);
+}
+
+alert( ucFirst("john") ); 
     </script>
 </body>
 </html>

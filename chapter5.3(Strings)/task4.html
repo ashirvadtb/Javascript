@@ -7,13 +7,9 @@
 </head>
 <body>
     <script>
-        function isEmpty(obj) {
-            for (let key in obj) {
-    
-                    return false;
-                }
-            return true;
-            }
+        function extractCurrencyValue(str) {
+  return +str.slice(1);
+}
     </script>
 </body>
 </html>
