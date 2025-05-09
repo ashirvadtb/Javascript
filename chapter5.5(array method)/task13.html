@@ -7,13 +7,13 @@
 </head>
 <body>
     <script>
-       function shuffle(array) {
-  array.sort(() => Math.random() - 0.5);
+        function groupById(array) {
+  return array.reduce((obj, value) => {
+    obj[value.id] = value;
+    return obj;
+  }, {})
 }
-
-let arr = [1, 2, 3];
-shuffle(arr);
-alert(arr);
     </script>
+    
 </body>
 </html>
