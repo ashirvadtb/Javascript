@@ -27,15 +27,38 @@
 
 // for (let num of range) {
 //   alert(num); // 1, then 2, 3, 4, 5
-// }
+// // }
 
-let arrayLike = {
-    0 :"hi",
-    1 : "hello",
-    length : 2
-}
-let array = Array.from(arrayLike);
-alert(array.pop())
-    </script>
+// let arrayLike = {
+//     0 :"hi",
+//     1 : "hello",
+//     length : 2
+// }
+// let array = Array.from(arrayLike);
+// alert(array.pop())
+
+// let fruits = ["Apple", "Orange", "Plum"];
+
+// // alert( fruits[fruits.length-2] ); 
+// let fruits = ["Apple", "Orange", "Plum"];
+
+// // same as fruits[fruits.length-1]
+// alert( fruits.at(-1) ); // Plum
+
+let arr=["a","b","c"];
+// alert(arr.at(-2));
+// alert(arr.push("d"))
+// alert(arr)
+// for(let ar of arr){
+//     alert(ar)
+// }
+let styles = ["jazz"," blues"];
+styles.push(" rock-n-roll ");
+styles[Math.floor((styles.length-1)/2)]="classic"
+let frst = styles.shift()
+styles.unshift(" rap "," raggage");
+alert (frst)
+alert(styles)
+//     </script>
 </body>
 </html>
