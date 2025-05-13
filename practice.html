@@ -45,7 +45,7 @@
 // // same as fruits[fruits.length-1]
 // alert( fruits.at(-1) ); // Plum
 
-let arr=["a","b","c"];
+// let arr=["a","b","c"];
 // alert(arr.at(-2));
 // alert(arr.push("d"))
 // alert(arr)
@@ -68,10 +68,25 @@ let arr=["a","b","c"];
 // let date = new Date(2016, 1, 28);
 // date.setDate(date.getDate() + 2);
 
-let date = Date.now();
+// let date = Date.now();
 
+// let arr1=[ 3,5,1];
+// let arr2=[4,8,7];
+// // alert(Math.max(...arr1,...arr2))
+// let merged=[...arr1,...arr2];
+// alert(merged)
+// let str="hello"
+// alert(Array.from(str));
 
-alert( date ); 
+function sayHi(firstname,lastname){
+        function getfullname(){
+             return  firstname+" "+lastname;
+        }
+        alert("hi "+getfullname());
+        alert("by "+getfullname());
+}sayHi("ali","tintu");
+
+// alert( date ); 
 //     </script>
 </body>
 </html>
