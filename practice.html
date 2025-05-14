@@ -78,15 +78,43 @@
 // let str="hello"
 // alert(Array.from(str));
 
-function sayHi(firstname,lastname){
-        function getfullname(){
-             return  firstname+" "+lastname;
-        }
-        alert("hi "+getfullname());
-        alert("by "+getfullname());
-}sayHi("ali","tintu");
+// function sayHi(firstname,lastname){
+//         function getfullname(){
+//              return  firstname+" "+lastname;
+//         }
+//         alert("hi "+getfullname());
+//         alert("by "+getfullname());
+// }sayHi("ali","tintu");
 
 // alert( date ); 
-//     </script>
+
+
+// function sayHi(a,b){
+//     alert(a+" "+b);
+// }
+// setTimeout(sayHi,1000,"hi","gooys")
+
+// let timerId = setTimeout(function tick() {
+//   alert('tick');
+//   timerId = setTimeout(tick, 2000); // (*)
+// }, 2000);
+
+// setTimeout(()=>alert("world"));
+// alert("hello")
+// alert("hello1")
+// alert("hello2")
+// alert("hello3")
+
+const person={
+    name:"Alice",
+    greet:function(){
+        alert(`hello my name is : ${this.name}`);
+    }
+    };
+    const anotherperson= {name:"bob"};
+    person.greet.call(anotherperson);
+
+
+// //     </script>
 </body>
-</html>
+ </html>
