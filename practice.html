@@ -132,8 +132,130 @@
 
 // let double=set.bind(null,2);
 // alert(double(3));
+// let group={
+//     title:"our group",
+//     students:[ "john","abu","siby"],
+//     showList() {
+//         this.students.forEach(
+//             student=> alert(this.title+':'+student)
+//         );
+//     }
+// };
+// group.showList();
+
+// class product{
+//     constructor(name,price){
+//         this.name=name;
+//         this.price=price;
+//     }
+//     diplay(){
+//         alert(`product name=${this.name}`);
+//         alert(`price=${this.price}`);
+//     }
+// }
+// const product1=new product("lays",5);
+// product1.diplay();
 
 
+// class car{
+//     constructor(name,model){
+//         this.name1=name;
+//         this.model1=model;
+//     }
+//     show(){
+//         alert(`car name= ${this.name1}`);
+//         alert(`car model=${this.model1}`);
+//     }
+
+// }
+// const shows=new car("benz","suv");
+// const shows2=new car("benzee","suvee");
+// const shows3=new car("benz","suv");
+// const shows4=new car("benzrr","suvrr");
+
+// shows.show();
+// shows2.show();
+// shows3.show();
+// shows4.show();
+// shows5.show();
+
+// class Myclass{
+//     constructor(name){
+//         this.name=name;
+//     }
+//      show(){
+//         alert(`name=${this.name}`);
+//      }
+    
+// }
+// const diplay=new Myclass("ashirvad");
+// diplay.show();
+
+// alert(Myclass)
+
+// function makeclass(phrase){
+//     return class{
+//         // constructor(name){
+//         //     this.name=name;
+//         // }
+//         display(){
+//             alert(phrase);
+//         }
+//     }
+// }
+// let user =makeclass('ashirvad');
+// new user().display();
+
+// function makeclass(phrase){
+//      return class{
+//         constructor(name){
+//             this.name=name;
+
+//         }
+//         sayhi(){
+//             alert(`${phrase},${this.name}`);
+//         }
+//      }
+// } let say= makeclass("hi");
+
+// let sui= new say("alice");
+// sui.sayhi()
+
+
+
+// class Animal{
+//     speak(){
+//         alert("animal make sounds");
+//     }
+// }
+// class dog extends Animal{
+    
+//      speak(){
+//         super.speak()
+
+//      alert("dog barks");
+//      }
+// }
+// let dogs= new dog();
+// dogs.speak()
+class Animal {
+
+constructor(name) {
+  this.speed = 0;
+  this.name = name;
+}
+// ...
+}
+class dog extends Animal{
+    constructor(name,age){
+        super(name);
+        this.age=age;
+    }
+
+}
+let Dog=new dog("pug",2);
+alert(Dog.name);
+alert(Dog.age);
 
 // //     </script>
 </body>
