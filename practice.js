@@ -42,31 +42,120 @@
 
 
 
-function asyncFunct(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log("data1");
-            resolve("success");
-        },4000);
-    });
-}
+// function asyncFunct(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("data1");
+//             resolve("success");
+//         },4000);
+//     });
+// }
 
-function asyncFunct2(){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            console.log("data1");
-            resolve("success");
-        },4000);
-    });
-}
-console.log("fetching data1")
-let p1= asyncFunct();
-p1.then((res)=>{
-    console.log(res);
-}); 
+// function asyncFunct2(){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             console.log("data2");
+//             resolve("success");
+//         },4000);
+//     });
+// }
+// console.log("fetching data1")
+//  asyncFunct().then((res)=>{
+//     // console.log(res);
+//     console.log("fethng data 2");
+//     asyncFunct2().then((res)=>{
+        
+//     // console.log(res);
+//     });
 
-console.log("fethng data 2")
-let p2= asyncFunct2();
-p2.then((res)=>{
-    console.log(res);
-});
+// }); 
+
+// function getData(dataid)
+// {
+//    return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("data",dataid);
+//         resolve("success");
+//     },3000);
+//    });
+// }
+
+// async function getAllData() {
+//     await getData(1);
+//     await getData(2);
+//     await getData(3);
+
+
+// }
+// getData(1).then((res)=>{
+//     console.log(res);
+//     getData(2).then((res)=>{
+//         console.log(res);
+//         getData(3).then((res)=>{
+//             console.log(res)
+//         })
+//     })
+// });
+
+// getData(1).then((res)=>{
+//     console.log(res);
+//         return getData(2);
+// }).then((res)=>{
+//     console.log(res);
+//     return getData(3);
+// }).then((res)=>{
+//     console.log(res);
+// })
+
+
+// async function hello(){
+//     console.log("hello"); 
+// }
+
+
+// function getData(dataid)
+// {
+//    return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("data",dataid);
+//         resolve("success");
+//     },3000);
+//    });
+// }
+
+// (async function getAllData() {
+//     await getData(1);
+//     await getData(2);
+//     await getData(3);
+
+
+// })();
+
+// console.log("a");
+// let promise= new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//         console.log("b");
+//     },2000);
+// });
+// console.log("c")
+
+function* generateSequence(){
+    yield 1;
+    yield 2;
+    yield 3;
+}
+// let generator =generateSequence()
+// let one = generator.next();
+// alert(JSON.stringify(one))
+// let two = generator.next();
+// alert(JSON.stringify(two))
+// let three = generator.next();
+// alert(JSON.stringify(three))
+
+// for( let value of  generator){
+// alert(value)
+// }
+// let sequence=[0,...generateSequence()
+// ];
+// alert(sequence);
+
