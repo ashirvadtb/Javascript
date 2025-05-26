@@ -159,3 +159,79 @@ function* generateSequence(){
 // ];
 // alert(sequence);
 
+// function* generateNumber(){
+//     yield 1;
+//     yield 2;
+//     yield 3;
+// }
+
+//  let numbers=generateNumber();
+// //  console.log(numbers.next());
+
+//  for( let value of numbers){
+//     console.log(value);
+//  }
+
+// function* forever(){
+//     let i=0;
+//     while(true){
+//        yield i++;
+//     }
+// }
+// const gen = forever();
+// // while(true){
+// gen.next().value;
+// function* forever() {
+//     let i = 0;
+//     while (true) {
+//       yield i++;
+//     }
+//   }
+  
+//   const gen = forever();
+  
+//   console.log(gen.next().value );
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   console.log(gen.next().value );// 0
+//   // 0
+  // and so on...
+  
+
+//   function* digits(){
+//     yield* [0,1,2];
+//   }
+
+//   function*  letters(){
+//     yield* ['a','b'];
+//   }
+
+//   function* combine(){
+//     yield* digits();
+//     yield* letters();
+//   }
+
+//   console.log([...combine()]);
+
+
+// let range={
+//     from:1,
+//     to:5,
+
+//     *[Symbol.iterator](){
+//         for(let value=this.from;value<=this.to;value++){
+//             yield value;
+//         }
+//     }
+// };
+
+// alert([...range])
+
+export function practice(user){
+    alert(`hello ${user}`)
+}
