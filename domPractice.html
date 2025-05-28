@@ -6,9 +6,9 @@
     <title>Document</title>
     
 </head>
-<body >
+<!-- <body >
 
-    <!-- <div id="elem">
+    <div id="elem">
         <div id=" elem-content">
             Element
         </div>
@@ -33,10 +33,23 @@
       <!-- <p> A paragraph </p>
       <div> A div</div> -->
       <!-- <input type="text" id="elem" value="value"> -->
-       <div id="elem">blink</div>
+       <!-- <div id="elem">blink</div> -->
       </body>
-
+<style>
+.alert{
+  padding: 15px;
+  border: 1px solid #93ee93;
+  border-radius: 6px;
+  color: rgb(16, 165, 36);
+  background-color: #99ff99;
+  box-shadow: black;
+}
+</style>
     <script>
+      let div=document.createElement('div');
+      div.className="alert";
+      div.innerHTML="<strong>hi there </strong>this is a message";
+      document.body.append(div);
         // document.body.style.background='red';
         // setTimeout(()=>document.body.style.background="black",1000);
         // alert(document.body.innerHTML)        
@@ -62,9 +75,30 @@
     //    alert(elem.id);
     //    alert(elem.value)
 
-    setInterval(()=>elem.hidden=!elem.hidden,1000)
+    // setInterval(()=>elem.hidden=!elem.hidden,1000)
+//     let div = document.createElement('div');
 
-    </script>
+// // 2. Set its class to "alert"
+// div.className = "alert";
+
+// // 3. Fill it with the content
+// div.innerHTML = "<strong>Hi there!</strong> You've read an important message.";
+// document.body.append(div);
+    // </script> 
+    
+    <!-- <style>
+      .alert{
+      padding: 15px;
+      border: 1px solid #d6e9c6;
+      border-radius: 4px;
+      color: #3c763d;
+      background-color: #dff0d8;
+     }
+    </style>
+    <div class="alert">
+      <strong>Hi there!</strong> You've read an important message.
+    </div> -->
+   
 </body >
 
 </html>
