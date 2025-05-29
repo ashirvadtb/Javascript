@@ -282,7 +282,11 @@
 // // //  
 -->
 <script>
-  
+  let input = document.querySelector('input');
+console.log(input.getAttribute('type')); // "text"
+console.log(input.getAttribute('value')); // "Initial Value"
+input.setAttribute('placeholder', 'Enter text here'); 
+document.append(input)
 </script>
 
 </body>

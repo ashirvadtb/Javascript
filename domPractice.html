@@ -45,11 +45,17 @@
   box-shadow: black;
 }
 </style>
+<div class="alert" id="div">
+  <strong>hi there </strong>
+  you are spcl
+</div>
     <script>
-      let div=document.createElement('div');
-      div.className="alert";
-      div.innerHTML="<strong>hi there </strong>this is a message";
-      document.body.append(div);
+      let div2=div.cloneNode(true);
+      // div.className="alert";
+      div2.querySelector('strong').innerHTML='Bye there!';
+      // div.innerHTML="<strong>hi there </strong>this is a message";
+      // document.body.append(div);
+      div.after(div2)
         // document.body.style.background='red';
         // setTimeout(()=>document.body.style.background="black",1000);
         // alert(document.body.innerHTML)        
